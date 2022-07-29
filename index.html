@@ -1,0 +1,784 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- font awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+      integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="./src/bootstrap.min.css" />
+    <!-- custom css -->
+    <link rel="stylesheet" href="custom.css" />
+    <!-- favicon -->
+    <link
+      rel="shortcut icon"
+      href="./image/favicon/favicon.svg"
+      type="image/x-icon"
+    />
+    <title>Core Talks</title>
+  </head>
+  <body class="bg-custom-dark-blue">
+    <!-- header -->
+    <header class="bg-custom-dark-blue">
+      <!-- navbar -->
+      <nav
+        class="navbar navbar-expand-lg navbar-dark bg-custom-dark border-bottom border-1 border-dark"
+        id="nav"
+      >
+        <div class="container">
+          <a class="navbar-brand ms-1" href="#nav">
+            <img
+              src="./image/logo/logo.svg"
+              alt=""
+              srcset=""
+              width="150"
+              height="50"
+            />
+          </a>
+          <div class="ms-auto d-none d-md-inline d-lg-none">
+            <ul class="navbar-nav">
+              <li
+                class="nav-item mx-2 my-1 my-lg-0 d-flex flex-column justify-content-center"
+              >
+                <a
+                  class="nav-link text-white fw-semibold fs-6 rounded-pill bg-custom-purple px-3 py-1 lh-sm text-center"
+                  aria-current="page"
+                  href="#enroll"
+                  >এনরোল করুন
+                </a>
+              </li>
+            </ul>
+          </div>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-lg-0">
+              <li class="nav-item mx-2">
+                <a
+                  class="nav-link active text-light fw-semibold opacity-75 fs-6"
+                  aria-current="page"
+                  href="#home"
+                  >হোম</a
+                >
+              </li>
+              <li class="nav-item mx-2">
+                <a
+                  class="nav-link text-light fw-semibold opacity-75 fs-6"
+                  aria-current="page"
+                  href="#home"
+                  >ফিচার্স</a
+                >
+              </li>
+              <li class="nav-item mx-2">
+                <a
+                  class="nav-link text-light fw-semibold opacity-75 fs-6"
+                  aria-current="page"
+                  href="#home"
+                  >মডিউল</a
+                >
+              </li>
+              <li class="nav-item mx-2">
+                <a
+                  class="nav-link text-light fw-semibold opacity-75 fs-6"
+                  aria-current="page"
+                  href="#home"
+                  >প্রজেক্টস</a
+                >
+              </li>
+              <li class="nav-item mx-2">
+                <a
+                  class="nav-link text-light fw-semibold opacity-75 fs-6"
+                  aria-current="page"
+                  href="#home"
+                  >সাপোর্ট</a
+                >
+              </li>
+              <li
+                class="nav-item mx-2 my-1 my-lg-0 d-flex flex-column justify-content-center my-sm-2 my-lg-0"
+              >
+                <a
+                  class="nav-link text-white fw-semibold fs-6 rounded-pill bg-custom-blue px-3 py-1 lh-sm text-center"
+                  aria-current="page"
+                  href="#home"
+                  >লগইন
+                </a>
+              </li>
+              <li
+                class="nav-item mx-2 my-1 my-lg-0 d-flex flex-column justify-content-center my-sm-2 my-lg-0"
+              >
+                <a
+                  class="nav-link text-white fw-semibold fs-6 rounded-pill bg-custom-purple px-3 py-1 lh-sm text-center d-md-none d-lg-inline"
+                  aria-current="page"
+                  href="#home"
+                  >এনরোল করুন
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <!-- carousel -->
+      <div
+        id="carouselExampleCaptions"
+        class="carousel slide w-75 my-3 mx-auto p-3"
+        data-bs-ride="carousel"
+      >
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img
+              src="./image/hero-section/1.svg"
+              class="d-block w-100"
+              alt="cover-1"
+            />
+            <div class="carousel-caption d-none d-md-inline d-lg-none">
+              <button
+                type="button "
+                class="btn btn-sm text-white px-3 bg-custom-purple rounded-pill fw-semibold"
+              >
+                Explore now
+              </button>
+            </div>
+            <div class="carousel-caption d-none d-md-none d-lg-inline">
+              <button
+                type="button"
+                class="btn btn-lg text-white px-3 bg-custom-purple rounded-pill fw-semibold"
+              >
+                Explore now
+              </button>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img
+              src="./image/hero-section/4.svg"
+              class="d-block w-100"
+              alt="cover-1"
+            />
+            <div class="carousel-caption d-none d-md-inline d-lg-none">
+              <button
+                type="button "
+                class="btn btn-sm text-white px-3 bg-custom-purple rounded-pill fw-semibold"
+              >
+                Explore now
+              </button>
+            </div>
+            <div class="carousel-caption d-none d-md-none d-lg-inline">
+              <button
+                type="button"
+                class="btn btn-lg text-white px-3 bg-custom-purple rounded-pill fw-semibold"
+              >
+                Explore now
+              </button>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img
+              src="./image/hero-section/2.svg"
+              class="d-block w-100"
+              alt="cover-1"
+            />
+            <div class="carousel-caption d-none d-md-inline d-lg-none">
+              <button
+                type="button "
+                class="btn btn-sm text-white px-3 bg-custom-purple rounded-pill fw-semibold"
+              >
+                Explore now
+              </button>
+            </div>
+            <div class="carousel-caption d-none d-md-none d-lg-inline">
+              <button
+                type="button"
+                class="btn btn-lg text-white px-3 bg-custom-purple rounded-pill fw-semibold"
+              >
+                Explore now
+              </button>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img
+              src="./image/hero-section/3.svg"
+              class="d-block w-100"
+              alt="cover-1"
+            />
+            <div class="carousel-caption d-none d-md-inline d-lg-none">
+              <button
+                type="button "
+                class="btn btn-sm text-white px-3 bg-custom-purple rounded-pill fw-semibold"
+              >
+                Explore now
+              </button>
+            </div>
+            <div class="carousel-caption d-none d-md-none d-lg-inline">
+              <button
+                type="button"
+                class="btn btn-lg text-white px-3 bg-custom-purple rounded-pill fw-semibold"
+              >
+                Explore now
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </header>
+    <!-- courses-->
+    <section class="bg-custom-main">
+      <div class="container">
+        <div class="my-5">
+          <div class="p-4 d-flex flex-column align-items-center">
+            <img
+              class="mb-3"
+              src="./image/peep1.f4841716.svg"
+              alt=""
+              srcset=""
+              width="115"
+              height="115"
+            />
+            <h1 class="text-light fw-bold fs-2 text-center">
+              <span class="opacity-75"> এক নজরে আমাদের</span>
+              <span class="text-custom-light-ocean-blue opacity-100"
+                >ডেভেলপমেন্ট</span
+              >
+              <span class="opacity-75"> কোর্স </span>
+            </h1>
+            <small class="text-xs text-light fw-bold opacity-50"
+              >এই কোর্স এ যা যা থাকছে</small
+            >
+          </div>
+        </div>
+        <div class="container bg-custom-container rounded-3 mb-5">
+          <div class="row border border-dark p-4 rounded-3">
+            <div
+              class="col-12 col-lg-6 text-light p-4 d-flex flex-column text-center text-md-start d-md-flex flex-md-row"
+            >
+              <i
+                class="fa-solid fa-video text-custom-light-ocean-blue text-4xl py-3 d-md-none"
+              ></i>
+              <img
+                class="d-none d-md-inline"
+                src="./image/course/course-3.png"
+                alt=""
+                width="180"
+                height="180"
+              />
+              <div
+                class="ms-md-5 d-md-flex flex-md-column justify-content-md-center"
+              >
+                <h6 class="fw-bold text-light py-1">12 টি মডিউলে 135+ ভিডিও</h6>
+                <p class="text-base lh-base opacity-75 py-1">
+                  আপনারা যেন ধাপে ধাপে শিখতে পারেন সেজন্য পুরো কোর্সটি 12টি
+                  মডিউলে ও 135+ ভিডিওতে ভাগ করে সাজানো হয়েছে।
+                </p>
+              </div>
+            </div>
+            <hr class="container bg-light border border-1 w-75 d-lg-none" />
+            <div
+              class="col-12 col-lg-6 text-light p-4 d-flex flex-column text-center text-md-start d-md-flex flex-md-row"
+            >
+              <i
+                class="fa-solid fa-download text-custom-light-ocean-blue text-4xl py-3 d-md-none"
+              ></i>
+              <img
+                class="d-none d-md-inline"
+                src="./image/course/course-2.png"
+                alt=""
+                width="180"
+                height="180"
+              />
+              <div
+                class="ms-md-5 d-md-flex flex-md-column justify-content-md-center"
+              >
+                <h6 class="fw-bold text-light py-1">
+                  30 ঘণ্টার 15GB রেকোর্ডেড কন্টেন্ট
+                </h6>
+                <p class="text-base lh-base opacity-75 py-1">
+                  সময় এবং ব্যান্ডউইডথ খরচ এর বিষয়টি বিবেচনা করে ভিডিও সাইজ এবং
+                  ডিউরেশন অপটিমাইজ করা হয়েছে।
+                </p>
+              </div>
+            </div>
+            <hr class="container bg-light border border-1 w-75 d-lg-none" />
+            <div
+              class="col-12 col-lg-6 text-light p-4 d-flex flex-column text-center text-md-start d-md-flex flex-md-row"
+            >
+              <i
+                class="fa-solid fa-calendar-check text-custom-light-ocean-blue text-4xl py-3 d-md-none"
+              ></i>
+              <img
+                class="d-none d-md-inline"
+                src="./image/course/course-6.png"
+                alt=""
+                width="180"
+                height="180"
+              />
+              <div
+                class="ms-md-5 d-md-flex flex-md-column justify-content-md-center"
+              >
+                <h6 class="fw-bold text-light py-1">12 টি মডিউলে 135+ ভিডিও</h6>
+                <p class="text-base lh-base opacity-75 py-1">
+                  আপনারা যেন ধাপে ধাপে শিখতে পারেন সেজন্য পুরো কোর্সটি 12টি
+                  মডিউলে ও 135+ ভিডিওতে ভাগ করে সাজানো হয়েছে।
+                </p>
+              </div>
+            </div>
+            <hr
+              class="container bg-light border border-1 w-75 d-lg-none d-md-none"
+            />
+            <div
+              class="col-12 col-lg-6 text-light p-4 d-flex flex-column text-center text-md-start d-md-flex flex-md-row d-md-none d-lg-flex"
+            >
+              <i
+                class="fa-solid fa-code text-custom-light-ocean-blue text-4xl py-3 d-md-none"
+              ></i>
+              <img
+                class="d-none d-md-inline"
+                src="./image/course/course-1.png"
+                alt=""
+                width="180"
+                height="180"
+              />
+              <div
+                class="ms-md-5 d-md-flex flex-md-column justify-content-md-center"
+              >
+                <h6 class="fw-bold text-light py-1">120+ টি কুইজ</h6>
+                <p class="text-base lh-base opacity-75 py-1">
+                  আপনারা যেন ধাপে ধাপে শিখতে পারেন সেজন্য পুরো কোর্সটি 12টি
+                  মডিউলে ও 135+ ভিডিওতে ভাগ করে সাজানো হয়েছে।
+                </p>
+              </div>
+            </div>
+            <hr
+              class="container bg-light border border-1 w-75 d-lg-none d-md-none"
+            />
+            <div
+              class="col-12 col-lg-6 text-light p-4 d-flex flex-column text-center text-md-start d-md-flex flex-md-row d-md-none d-lg-flex"
+            >
+              <i
+                class="fa-solid fa-people-group text-custom-light-ocean-blue text-4xl py-3 d-md-none"
+              ></i>
+              <img
+                class="d-none d-md-inline"
+                src="./image/course/course-4.png"
+                alt=""
+                width="180"
+                height="180"
+              />
+              <div
+                class="ms-md-5 d-md-flex flex-md-column justify-content-md-center"
+              >
+                <h6 class="fw-bold text-light py-1">120+ টি কুইজ</h6>
+                <p class="text-base lh-base opacity-75 py-1">
+                  আপনারা যেন ধাপে ধাপে শিখতে পারেন সেজন্য পুরো কোর্সটি 12টি
+                  মডিউলে ও 135+ ভিডিওতে ভাগ করে সাজানো হয়েছে।
+                </p>
+              </div>
+            </div>
+            <hr
+              class="container bg-light border border-1 w-75 d-lg-none d-md-none"
+            />
+            <div
+              class="col-12 col-lg-6 text-light p-4 d-flex flex-column text-center text-md-start d-md-flex flex-md-row d-md-none d-lg-flex"
+            >
+              <i
+                class="fa-solid fa-laptop-code text-custom-light-ocean-blue text-4xl py-3 d-md-none"
+              ></i>
+              <img
+                class="d-none d-md-inline"
+                src="./image/course/course-5.png"
+                alt=""
+                width="180"
+                height="180"
+              />
+              <div
+                class="ms-md-5 d-md-flex flex-md-column justify-content-md-center"
+              >
+                <h6 class="fw-bold text-light py-1">120+ টি কুইজ</h6>
+                <p class="text-base lh-base opacity-75 py-1">
+                  আপনারা যেন ধাপে ধাপে শিখতে পারেন সেজন্য পুরো কোর্সটি 12টি
+                  মডিউলে ও 135+ ভিডিওতে ভাগ করে সাজানো হয়েছে।
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container d-flex flex-row justify-content-center pb-3">
+        <button
+          type="button "
+          class="btn btn-md text-white px-3 bg-custom-purple rounded-pill fw-semibold"
+        >
+          আরো দেখুন
+        </button>
+      </div>
+    </section>
+    <!-- trusted company -->
+    <section class="container-fluid p-3 d-none d-md d-lg-inline">
+      <div class="container">
+        <h2 class="text-light text-center fs-4 pt-5">
+          Trusted By Over 800+ Companies
+        </h2>
+        <div class="d-flex pt-4 justify-content-center">
+          <div>
+            <img
+              src="./image/company/company-1.png"
+              alt=""
+              width="125"
+              height="15"
+              class="px-3"
+            />
+          </div>
+          <div>
+            <img
+              src="./image/company/company-2.png"
+              alt=""
+              width="140"
+              height="25"
+              class="px-3"
+            />
+          </div>
+          <div>
+            <img
+              src="./image/company/company-3.png"
+              alt=""
+              width="120"
+              height="18"
+              class="px-3"
+            />
+          </div>
+          <div>
+            <img
+              src="./image/company/company-4.png"
+              alt=""
+              width="130"
+              height="15"
+              class="px-3"
+            />
+          </div>
+          <div>
+            <img
+              src="./image/company/company-5.png"
+              alt=""
+              width="125"
+              height="18"
+              class="px-3"
+            />
+          </div>
+          <div>
+            <img
+              src="./image/company/company-6.png"
+              alt=""
+              width="130"
+              height="20"
+              class="px-3"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- modal -->
+    <section class="bg-custom-main">
+      <div
+        class="container-fluid border border-dark p-5 d-flex flex-column align-items-center"
+      >
+        <img src="./image/peep2.ee5f8180.svg" alt="" width="80" />
+
+        <h2 class="text-light fw-semibold text-center py-3">
+          কোরটক - এর ভবিষ্যৎ সকল কোর্সে
+          <span class="text-custom-light-ocean-blue"> ২০% ডিস্কাউন্ট</span>
+        </h2>
+        <p class="text-light text-center">
+          যেহেতু এটাই প্লাটফর্মের প্রথম পেইড কোর্স, তাই যেসব ভাই আমাদের উপর
+          বিশ্বাস রেখে আমাদের এই প্রথম কোর্সটিতে এনরোল করবেন, তাদের প্রতি
+          ভালবাসা এবং কৃতজ্ঞতাস্বরূপ, আমরা আজীবন তাদেরকে আমাদের ভবিষ্যৎ সকল
+          কোর্সে ২০% এক্সক্লুসিভ ডিস্কাউন্ট দিব।
+        </p>
+        <button
+          type="button"
+          class="btn btn-primary rounded-pill"
+          data-bs-toggle="modal"
+          data-bs-target="#myModal"
+        >
+          এনরোল করুন
+        </button>
+        <div class="modal" id="myModal">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title">Contact Us</h5>
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="modal"
+                ></button>
+              </div>
+              <div class="modal-body">
+                <form>
+                  <div class="mb-3">
+                    <label class="form-label required">Name</label>
+                    <input type="text" class="form-control" />
+                  </div>
+                  <div class="mb-3">
+                    <label class="form-label required">Email</label>
+                    <input type="email" class="form-control" />
+                  </div>
+                  <div class="mb-3">
+                    <label class="form-label required"
+                      >Type ypur message here</label
+                    >
+                    <textarea class="form-control"></textarea>
+                  </div>
+                </form>
+              </div>
+              <div class="modal-footer">
+                <button type="submit" class="btn btn-primary rounded-pill">
+                  Submit
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- faq -->
+    <section
+      class="container-fluid d-flex flex-column border-bottom border-1 border-dark pb-5 bg-custom-main"
+    >
+      <!-- first-half -->
+      <div class="container">
+        <div class="mt-4">
+          <div class="d-flex flex-column align-items-center">
+            <img
+              class="mb-3"
+              src="./image/faq.8116aa7d.svg"
+              alt=""
+              srcset=""
+              width="150"
+              height="150"
+            />
+            <h1 class="text-light fw-bold text-3xl text-center">
+              সচরাচর জানতে চাওয়া
+              <span class="d-block text-center text-custom-light-ocean-blue">
+                প্রশ্নের উত্তর
+              </span>
+            </h1>
+            <p
+              class="text-base lh-base opacity-75 py-1 text-light text-justify"
+            >
+              আপনাদের কমন কিছু প্রশ্নের উত্তর আমরা এখানে লিস্ট করে দিয়েছি।
+              আমাদের কে প্রশ্ন করার পূর্বে এই লিস্টটি একবার পড়ে নেয়ার অনুরোধ
+              থাকলো।
+            </p>
+          </div>
+        </div>
+        <div class="container py-3">
+          <div class="accordion" id="accordionExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingOne">
+                <button
+                  class="accordion-button"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseOne"
+                  aria-expanded="true"
+                  aria-controls="collapseOne"
+                >
+                  What is Difference between Flexbox and Grid
+                </button>
+              </h2>
+              <div
+                id="collapseOne"
+                class="accordion-collapse collapse show"
+                aria-labelledby="headingOne"
+                data-bs-parent="#accordionExample"
+              >
+                <div class="accordion-body">
+                  <strong
+                    >Grid is made for two-dimensional layout while Flexbox is
+                    for one.</strong
+                  >This means Flexbox can work on either row or columns at a
+                  time, but Grids can work on both. Flexbox, gives you more
+                  flexibility while working on either element (row or column).
+                  HTML markup and CSS will be easy to manage in this type of
+                  scenario
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingTwo">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseTwo"
+                  aria-expanded="false"
+                  aria-controls="collapseTwo"
+                >
+                  What is Difference Between Bootstrap and Tailwind css
+                </button>
+              </h2>
+              <div
+                id="collapseTwo"
+                class="accordion-collapse collapse"
+                aria-labelledby="headingTwo"
+                data-bs-parent="#accordionExample"
+              >
+                <div class="accordion-body">
+                  Bootstrap comes with a set of pre-styled responsive,
+                  mobile-first components that possess a definite UI kit.
+                  Tailwind CSS uses a set of utility classes to create a neat UI
+                  with more flexibility and uniqueness. Sites created using
+                  Bootstrap follow the generic pattern that makes them look
+                  identical.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingThree">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseThree"
+                  aria-expanded="false"
+                  aria-controls="collapseThree"
+                >
+                  What is css Box Model
+                </button>
+              </h2>
+              <div
+                id="collapseThree"
+                class="accordion-collapse collapse"
+                aria-labelledby="headingThree"
+                data-bs-parent="#accordionExample"
+              >
+                <div class="accordion-body">
+                  In CSS, the term "box model" is used when talking about design
+                  and layout. The CSS box model is essentially
+                  <strong>a box that wraps around every HTML element.</strong>It
+                  consists of: margins, borders, padding, and the actual
+                  content.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingFour">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseFour"
+                  aria-expanded="false"
+                  aria-controls="collapseFour"
+                >
+                  What is Semantic tag
+                </button>
+              </h2>
+              <div
+                id="collapseFour"
+                class="accordion-collapse collapse"
+                aria-labelledby="headingFour"
+                data-bs-parent="#accordionExample"
+              >
+                <div class="accordion-body">
+                  The HTML semantics refers to
+                  <strong
+                    >he tags that provide meaning to an HTML page rather than
+                    just presentation.</strong
+                  >It makes HTML more comprehensible by better defining the
+                  different sections and layout of web pages.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- footer -->
+    <footer class="">
+      <div class="container py-3">
+        <img
+          class="ms-1"
+          src="./image/logo/logo.svg"
+          alt="logo"
+          srcset=""
+          width="150"
+          height="50"
+        />
+      </div>
+      <div class="container text-light fw-semibold d-flex">
+        <div class="d-none d-md-inline opacity-75">
+          <span class="">পেমেন্টের নিয়ম</span>
+        </div>
+
+        <div class="d-none d-md-inline px-3 opacity-75">
+          <span class=""> ইমেইল ভেরিফাই </span>
+        </div>
+        <div class="d-none d-sm-none d-md-inline px-3 opacity-75">
+          <span class=""> পাবলিক সাপোর্ট গ্রুপ </span>
+        </div>
+        <div class="d-none opacity-75 d-md-inline px-3">
+          <span class=""> যোগাযোগ </span>
+        </div>
+
+        <div class="d-flex text-custom-light-ocean-blue fs-6 ms-md-auto">
+          <div class="px-3">
+            <i class="fa-brands fa-facebook-f"></i>
+          </div>
+          <div class="px-3">
+            <i class="fa-brands fa-twitter"></i>
+          </div>
+          <div class="px-3">
+            <i class="fa-brands fa-youtube"></i>
+          </div>
+          <div class="px-3">
+            <i class="fa-brands fa-instagram"></i>
+          </div>
+        </div>
+      </div>
+      <hr class="container bg-light border border-1" />
+      <div
+        class="container text-light fs-lg-6 fw-semibold opacity-75 text-center"
+      >
+        কপিরাইট ©2022 সর্বস্বত্ব সংরক্ষিত।
+      </div>
+      <br />
+    </footer>
+    <!-- scrpit -->
+    <script src="./src/bootstrap.min.js"></script>
+  </body>
+</html>
